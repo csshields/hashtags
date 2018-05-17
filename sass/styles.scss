@@ -1,0 +1,70 @@
+/* Setup */
+@import '../node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize';
+@import '../node_modules/foundation-sites/scss/foundation';
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+@include foundation-xy-grid-classes(
+  $base-grid: true,
+  $margin-grid: true,
+  $padding-grid: true,
+  $block-grid: false,
+  $collapse: true,
+  $offset: true,
+  $vertical-grid: false,
+  $frame-grid: false
+);
+
+
+/* Variables */
+$headerLightColor:#aaa;
+
+
+/* Main css */
+body{ 
+	background-color:lightgray;
+	font-family:Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+#app{
+	width:1000px; margin:0 auto;
+}
+
+
+
+header{
+	background-color:#444; padding:10px 20px; color:white; 
+
+	h1{font-weight:normal;}
+
+	.subHeader{
+		color:$headerLightColor; padding-bottom:50px;
+	}
+	.resources{
+		background-color:white; color: black;
+	}
+	.reviews{
+		color:$headerLightColor;
+	}
+}
+
+.mainWrapper{ background-color:white; }
+
+.tabs{
+	padding:0;
+	list-style-type: none;
+	display: flex;
+	border: solid 1px $headerLightColor;
+
+	li{ 
+		text-align:center; background-color:#ccc; width:33.33333%; float:left;
+		padding:15px;
+		cursor: pointer;
+		border-right: solid 1px $headerLightColor;
+	}
+	.active{background-color:#fff;}   
+}
+.tabContent{
+	border-left: solid 1px $headerLightColor;
+	border-right: solid 1px $headerLightColor;
+	border-bottom: solid 1px $headerLightColor;
+}

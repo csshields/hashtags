@@ -1,0 +1,20 @@
+{
+  "name": "hashtags",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "foundation-sites": "^6.4.4-rc1",
+    "vue": "^2.5.16"
+  }
+}
